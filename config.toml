@@ -20,6 +20,7 @@ external_links_no_follow = true
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
 
+katex_enable = false
 
 hard_link_static = true
 
