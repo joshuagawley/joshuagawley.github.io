@@ -31,8 +31,9 @@
 
     <title>
         {% if page.title %} {{ page.title }}
+        {% elif section.title %} {{ section.title }}
         {% elif config.title %} {{ config.title }}
-        {% else %} Post {% endif %}
+        {% else %}Post{% endif %}
     </title>
 
     {% block js %}
