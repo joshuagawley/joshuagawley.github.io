@@ -1,10 +1,6 @@
 +++
 title = 'Contact me'
-template = "index.html"
-weight = 20
 +++
-
-# <b>Contact me</b>
 
 Please feel free to get in touch if you have any queries about performances, commissions, &c.
 

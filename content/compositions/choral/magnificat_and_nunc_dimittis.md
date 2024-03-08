@@ -1,5 +1,6 @@
 +++
 title = 'Magnificat and Nunc dimittis (2024)'
+template = "page.html"
 +++
 
 <h3><b>Instrumentation</b></h3>
