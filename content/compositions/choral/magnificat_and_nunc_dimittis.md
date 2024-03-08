@@ -1,12 +1,11 @@
 +++
 title = 'Magnificat and Nunc dimittis (2024)'
-template = "page.html"
 +++
 
-<h3><b>Instrumentation</b></h3>
+## <b>Instrumentation</b>
 SATB choir (with divisi) and organ
 
-<h3><b>Duration</b></h3>
+## <b>Duration</b>
 14 minutes
 
 ### <b>First performance</b>:  
