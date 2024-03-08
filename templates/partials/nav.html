@@ -1,0 +1,39 @@
+<div id="mobile-navbar" class="mobile-navbar">
+    <div class="mobile-header-logo">
+      <a href="/" class="logo">{{ config.extra.even_title }}</a>
+    </div>
+    <div class="mobile-navbar-icon icon-out">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+    <ul class="mobile-menu-list">
+      {% for item in config.extra.even_menu %}
+          <li class="mobile-menu-item">
+              <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                  {{ item.name }}
+              </a>
+          </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <header id="header">
+      <div class="logo"><a href="{{ config.base_url }}">{{ config.extra.even_title }}</a></div>
+      <nav class="menu">
+          <ul>
+              {% for item in config.extra.even_menu %}
+                  &nbsp
+                  <li>
+                      <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                          {{ item.name }}
+                      </a>
+                  </li>
+                  &nbsp
+              {% endfor %}
+          </ul>
+      </nav>
+  </header>

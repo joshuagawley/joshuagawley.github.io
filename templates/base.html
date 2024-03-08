@@ -1,0 +1,33 @@
+{% import "post_macros.html" as post_macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+    {% include "partials/header.html" %}
+
+    <body>
+        <div class="container">
+            {% include "partials/nav.html" %}
+            <main>
+                <div class="content" id="mobile-panel">
+                    {% block main_content %}
+                    {% endblock main_content %}
+                </div>
+            </main>
+
+            {% block footer %}
+            <!-- <footer role="contentinfo">
+                <div class="footer">
+                    <small>
+                        © 2024 Joshua Gawley. Built with <a href="https://www.getzola.org/">Zola</a>
+                    </small>
+                </div>
+            </footer> -->
+            {% endblock footer %}
+        </div>
+
+      {% block js_body %}
+          <script type="text/javascript" src="{{ get_url(path="even.js", trailing_slash=false) }}" ></script>
+      {% endblock js_body %}
+    </body>
+
+</html>
