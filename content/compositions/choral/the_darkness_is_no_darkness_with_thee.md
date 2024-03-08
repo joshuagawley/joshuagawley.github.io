@@ -1,9 +1,6 @@
 +++
 title = "The darkness is no darkness with thee (2022)"
-template = "page.html"
 +++
-
-# The darkness is no darkness with thee (2022)
 
 Winner of the 2023 Bristol University Music Society Composition Competition
 
