@@ -16,7 +16,8 @@ $code-font-family: Inconsolata, Consolas, Monaco, Menlo, Consolas, monospace !de
 $decoration-font-family: minion-pro, Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 html * {
-  font-family: minion-pro
+  font-family: minion-pro;
+  font-variant-numeric: oldstyle-nums;
 }
 
 code * {
