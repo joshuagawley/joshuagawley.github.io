@@ -1,9 +1,6 @@
 +++
-template = "index.html"
+title = "Compositions"
 +++
-
-# Compositions
-
 ## Choral
 
 [The darkness is no darkness with thee (2022)](@/compositions/choral/the_darkness_is_no_darkness_with_thee.md)

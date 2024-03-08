@@ -1,5 +1,6 @@
 +++
 title = 'O nata lux (2023)'
+template = "page.html"
 +++
 
 # O nata lux (2023)
