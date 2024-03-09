@@ -15,6 +15,14 @@ $code-colour: #c7254e;
 $code-font-family: Inconsolata, Consolas, Monaco, Menlo, Consolas, monospace !default;
 $decoration-font-family: minion-pro, Athelas, STHeiti, Microsoft Yahei, serif !default;
 
+.small-caps {
+  font-feature-settings: "smcp", "c2sc";
+}
+
+.ordinal {
+  font-variant-numeric: oldstyle-nums ordinal;
+}
+
 html * {
   font-family: minion-pro;
   font-variant-numeric: oldstyle-nums;
