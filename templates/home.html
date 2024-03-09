@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <br>
+    <section class="w3-panel textimage">
+        <img alt="Joshua Gawley" style ="max-width=100%;" src="/DSC01230_flipped.webp">
+        <div>
+            {{ section.content | safe }}
+        </div>
+    </section>
+{% endblock main_content %}
