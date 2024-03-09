@@ -46,5 +46,8 @@ even_menu = [
     {url = "$BASE_URL/compositions", name = "compositions"},
     {url = "$BASE_URL/contact", name = "contact"},
 ]
-google_analytics = "G-Z1GNC0HNW0"
 even_title = "Joshua Gawley"
+
+[extra.seo]
+google_analytics = "G-Z1GNC0HNW0"
+
