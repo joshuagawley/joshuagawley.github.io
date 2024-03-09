@@ -18,6 +18,27 @@ body {
   padding-bottom: 4rem;
 }
 
+// panel with text and image rendered side-by-side
+.textimage {
+  min-height: 50vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    max-width: 40%;
+    height: auto;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+  div {
+    max-width: 50%;
+    padding-top: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
 @include variables.max-screen() {
   body {
     border-top: 0;
