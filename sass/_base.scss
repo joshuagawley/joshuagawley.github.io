@@ -15,6 +15,14 @@ body {
 .container {
   width: variables.$body-width;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
   padding-bottom: 4rem;
 }
 
