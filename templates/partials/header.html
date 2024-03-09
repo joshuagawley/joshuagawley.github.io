@@ -1,4 +1,4 @@
-{% import "post_macros.html" as post_macros %}
+{% import "macros/seo.html" as seo %}
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,16 +6,6 @@
 
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1GNC0HNW0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'G-Z1GNC0HNW0');
-    </script>
 
     <link rel="stylesheet" href="https://use.typekit.net/gyu7mis.css">
 
@@ -46,4 +36,6 @@
 
     {% block extra_head %} 
     {% endblock extra_head %}
+
+    {{ seo::google_analytics() }}
 </head>
