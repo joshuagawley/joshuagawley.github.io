@@ -1,2 +1,3 @@
 [lfs]
 	fetchexclude = *
+	url = https://e6a39b1130817d5dab0a70c382264053:4d1b848dde4cd18ccff5139c8075ba199a3e2fa1b72bedd9e4afa2623071dc5c@git-lfs-s3-proxy.pages.dev/b04bfe76d32566b5bd63024e71d7af86.r2.cloudflarestorage.com/jsg
