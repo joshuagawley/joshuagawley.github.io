@@ -3,7 +3,7 @@
 {% block main_content %}
     <br>
     <section class="w3-panel textimage">
-        {% set image = resize_image(path="jsg_flipped.webp", width=1000, height=1000, op="fit", format="webp") %}
+        {% set image = resize_image(path="jsg.webp", width=1000, height=1000, op="fit", format="webp") %}
         <img alt="Joshua Gawley smiling" src="{{ image.url }}">
         <div>
             {{ section.content | safe }}
