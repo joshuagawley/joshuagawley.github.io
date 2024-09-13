@@ -49,6 +49,6 @@ even_menu = [
 ]
 even_title = "Joshua Gawley"
 
-[extra.seo]
-google_analytics = "G-Z1GNC0HNW0"
+# [extra.seo]
+# google_analytics = "G-Z1GNC0HNW0"
 
