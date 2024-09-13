@@ -7,8 +7,6 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://use.typekit.net/gyu7mis.css">
-
 {% if page %}
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
@@ -30,6 +28,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     {% endblock js %} 
     
+    <!-- Fonts come from https://use.typekit.net/gyu7mis.css -->
     {% block css %}
         <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) }}"> 
     {% endblock css %} 
