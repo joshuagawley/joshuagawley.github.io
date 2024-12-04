@@ -2,6 +2,8 @@
 title = "Compositions"
 +++
 ## Choral
+[Lo, how a rose e'er blooming (2024)](@/compositions/choral/lo_how_a_rose_eer_blooming.md)
+
 [O nata lux (2023)](@/compositions/choral/o_nata_lux.md)
 
 [Preces and Responses (2023)](@/compositions/choral/preces_and_responses.md)
