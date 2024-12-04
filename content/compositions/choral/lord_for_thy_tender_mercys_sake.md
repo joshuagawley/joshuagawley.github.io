@@ -1,5 +1,5 @@
 +++
-title = "Lord, for thy tender mercy's safe (2023)"
+title = "Lord, for thy tender mercy's sake (2023)"
 +++
 
 ## <b>Instrumentation</b>
