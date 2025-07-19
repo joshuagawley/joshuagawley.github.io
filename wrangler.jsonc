@@ -1,0 +1,8 @@
+// wrangler.jsonc 
+{
+    "name": "joshuagawley-github-io",
+    "compatibility_date": "2025-04-01",
+    "assets": {
+        "directory": "./public"
+    }
+}
