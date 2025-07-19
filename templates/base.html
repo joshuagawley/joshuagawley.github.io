@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include "partials/header.html" %}
+{% include "partials/header.html" %}
 
-    <body>
-        <div class="container">
-            {% include "partials/nav.html" %}
-            <main>
-                <div class="content" id="mobile-panel">
-                    {% block main_content %}
-                    {% endblock main_content %}
-                </div>
-            </main>
+<body>
+    <div class="container">
+        {% include "partials/nav.html" %}
+        <main>
+            <div class="content" id="mobile-panel">
+                {% block main_content %}
+                {% endblock main_content %}
+            </div>
+        </main>
 
-            {% block footer %}
-            <footer role="contentinfo">
-                <div class="footer">
-                    © 2024 Joshua Gawley. Built with <a href="https://www.getzola.org/">Zola</a>. Website code available <a href="https://github.com/joshuagawley/joshuagawley.github.io">here</a>.
-                </div>
-            </footer>
-            {% endblock footer %}
-        </div>
+        {% block footer %}
+        <footer role="contentinfo">
+            <div class="footer">
+                © 2025 Joshua Gawley. Built with <a href="https://www.getzola.org/">Zola</a>. Website code available <a
+                    href="https://github.com/joshuagawley/joshuagawley.github.io">here</a>.
+            </div>
+        </footer>
+        {% endblock footer %}
+    </div>
 
-      {% block js_body %}
-          <script type="text/javascript" src="{{ get_url(path="even.js", trailing_slash=false) }}" ></script>
-      {% endblock js_body %}
-    </body>
+    {% block js_body %}
+    <script type="text/javascript" src="{{ get_url(path=" even.js", trailing_slash=false) }}"></script>
+    {% endblock js_body %}
+</body>
 
 </html>
