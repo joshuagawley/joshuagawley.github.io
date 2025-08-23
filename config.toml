@@ -44,6 +44,8 @@ katex_enable = false
 author = "Joshua Gawley"
 even_menu = [
     {url = "$BASE_URL", name = "home"},
+    {url = "$BASE_URL/projects", name = "projects"},
+    {url = "$BASE_URL/talks", name = "talks"},
     {url = "$BASE_URL/compositions", name = "compositions"},
     {url = "$BASE_URL/contact", name = "contact"},
 ]
