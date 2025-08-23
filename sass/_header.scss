@@ -6,18 +6,18 @@
   justify-content: space-between;
 
   .logo {
-    font-family: minion-pro, Chancery, cursive, LiSu, sans-serif;
+    font-family: spectral, minion-pro, Chancery, cursive, LiSu, sans-serif;
     font-weight: 400;
 
     a {
       color: #34495e;
-      font-size: 48px;
+      font-size: 40px;
     }
   }
 
   .menu {
     align-self: flex-start;
-    font-family: minion-pro, variables.$decoration-font-family;
+    font-family: spectral, minion-pro, variables.$decoration-font-family;
 
     ul {
       display: inline-block;
