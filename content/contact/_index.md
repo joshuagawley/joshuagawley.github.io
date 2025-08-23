@@ -2,7 +2,9 @@
 title = 'Contact me'
 +++
 
-Please feel free to get in touch if you have any queries about performances, commissions, &c.
+If you are a recruiter, please contact me on LinkedIn [here](https://linkedin.com/in/joshuagawley).
+
+If you are interested in performing one of my works, please email me using the contact form below.
 
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbnveed" method="post">
   <fieldset id="fs-frm-inputs">
