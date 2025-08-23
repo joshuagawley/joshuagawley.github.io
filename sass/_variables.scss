@@ -13,7 +13,7 @@ $body-width: 800px;
 $mobile-navbar-height: 50px !default;
 $code-colour: #c7254e;
 $code-font-family: Inconsolata, Consolas, Monaco, Menlo, Consolas, monospace !default;
-$decoration-font-family: minion-pro, Athelas, STHeiti, Microsoft Yahei, serif !default;
+$decoration-font-family: spectral, minion-pro, Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 .small-caps {
   font-feature-settings: "smcp", "c2sc";
@@ -24,7 +24,7 @@ $decoration-font-family: minion-pro, Athelas, STHeiti, Microsoft Yahei, serif !d
 }
 
 html * {
-  font-family: minion-pro;
+  font-family: spectral;
   font-variant-numeric: oldstyle-nums;
 }
 
