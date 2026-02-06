@@ -15,7 +15,7 @@
         {% block footer %}
         <footer role="contentinfo">
             <div class="footer">
-                © 2025 Joshua Gawley. Built with <a href="https://www.getzola.org/">Zola</a>. Website code available <a
+                © {{ now() | date(format="%Y") }} Joshua Gawley. Built with <a href="https://www.getzola.org/">Zola</a>. Website code available <a
                     href="https://github.com/joshuagawley/joshuagawley.github.io">here</a>.
             </div>
         </footer>
