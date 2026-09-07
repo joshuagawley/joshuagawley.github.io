@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    {% block title %}
+        <h1><br>{{ section.title }}</br></h1>
+    {% endblock title %}
+
+    <section class="body">
+        {% for sub_path in section.subsections %}
+        {% set sub = get_section(path=sub_path) %}
+        <h2 id="{{ sub.title | slugify }}">{{ sub.title }}</h2>
+        {% for page in sub.pages %}
+        <p><a href="{{ page.permalink }}">{{ page.title }}</a></p>
+        {% endfor %}
+        {% endfor %}
+    </section>
+{% endblock main_content %}
