@@ -1,13 +1,10 @@
 +++
 title = "Lo, how a rose e'er blooming (2024)"
+date = 2024-01-01
+template = "composition.html"
+
+[extra]
+instrumentation = "Unaccompanied SSAATBB choir"
+duration = "ca. 3 minutes"
+perusal_pdf = "Lo, how a rose e'er blooming (2024) - Joshua Gawley - FINAL (perusal).pdf"
 +++
-
-## <b>Instrumentation</b>
-Unaccompanied SSAATBB choir
-
-## <b>Duration</b>
-ca. 3 minutes
-
-Perusal score available {{ <static_link label="here" file="/compositions/Lo, how a rose e'er blooming (2024) - Joshua Gawley - FINAL (perusal).pdf"/> }}
-
-If you are interested in performing this piece, please send me a message [here](@/contact/_index.md).

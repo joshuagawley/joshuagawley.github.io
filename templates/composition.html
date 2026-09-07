@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    {% block title %}
+        <h1><br>{{ page.title }}</br></h1>
+    {% endblock title %}
+
+    <section class="body">
+        {% if page.extra.note %}
+        <p>{{ page.extra.note }}</p>
+        {% endif %}
+
+        <h2><b>Instrumentation</b></h2>
+        <p>{{ page.extra.instrumentation }}</p>
+
+        <h2><b>Duration</b></h2>
+        <p>{{ page.extra.duration }}</p>
+
+        {% if page.extra.first_performance %}
+        <h2><b>First performance</b></h2>
+        <p>{{ page.extra.first_performance.date }}<br>
+        <b>{{ page.extra.first_performance.venue }}</b><br>
+        {{ page.extra.first_performance.performers }}</p>
+        {% endif %}
+
+        {% if page.extra.perusal_pdf %}
+        <p>Perusal score available {{<static_link label="here" file={"/compositions/" ~ page.extra.perusal_pdf}/>}}</p>
+        {% endif %}
+
+        {% if page.extra.recording_url %}
+        <p>Recording available <a href="{{ page.extra.recording_url }}">here</a>{% if page.extra.recording_note %} ({{ page.extra.recording_note }}){% endif %}</p>
+        {% endif %}
+
+        <p>If you are interested in performing this piece, please send me a message <a href="{{ get_url(path="@/contact/_index.md") }}">here</a>.</p>
+    </section>
+{% endblock main_content %}
