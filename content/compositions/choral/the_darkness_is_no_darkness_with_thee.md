@@ -16,7 +16,7 @@ ca. 4.5 minutes
 Harrison Robb, University of Bristol Chamber Choir  
    
 
-Perusal score available {{ static_link(label="here", file="/compositions/The darkness is no darkness with thee (2022) - Joshua Gawley - FINAL (perusal).pdf") }}
+Perusal score available {{ <static_link label="here" file="/compositions/The darkness is no darkness with thee (2022) - Joshua Gawley - FINAL (perusal).pdf"/> }}
 
 Recording available [here](https://youtu.be/VPDSY_niXjA?si=yifV62zcBBIFFbC4) (nb: there are minor differences between score in video and perusal score)
 

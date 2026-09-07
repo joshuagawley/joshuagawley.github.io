@@ -1,9 +1,9 @@
-{%- macro get_url_on_location(path) -%}
-  {% set path_safe = path | safe  %}
+{%- component standard.get_url_on_location(path: string) -%}
+  {% set path_safe = path | safe %}
 
-  {%- if path_safe is containing("http://") or path_safe is containing("https://") or path_safe is containing("mailto:") -%}
+  {%- if path_safe is containing(pat="http://") or path_safe is containing(pat="https://") or path_safe is containing(pat="mailto:") -%}
     {{ path_safe | safe }}
   {%- else -%}
     {{ get_url(path = path_safe) | safe }}
   {%- endif -%}
-{%- endmacro get_url_on_location -%}
+{%- endcomponent standard.get_url_on_location -%}
