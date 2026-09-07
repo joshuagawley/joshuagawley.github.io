@@ -1,7 +1,6 @@
 +++
 title = "O nata lux (2023)"
-date = 2024-01-28
-template = "composition.html"
+date = 2023-01-01
 
 [extra]
 instrumentation = "Unaccompanied SSAATB choir"

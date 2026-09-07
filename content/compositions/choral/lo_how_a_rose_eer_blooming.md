@@ -1,7 +1,6 @@
 +++
 title = "Lo, how a rose e'er blooming (2024)"
 date = 2024-01-01
-template = "composition.html"
 
 [extra]
 instrumentation = "Unaccompanied SSAATBB choir"

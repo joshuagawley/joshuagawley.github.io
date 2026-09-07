@@ -1,7 +1,6 @@
 +++
 title = "Preces and Responses (2023)"
 date = 2023-01-01
-template = "composition.html"
 
 [extra]
 instrumentation = "Unaccompanied SSATB choir"
