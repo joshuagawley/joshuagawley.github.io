@@ -1,2 +1,4 @@
+{% component resize_image(path, width, height, op) %}
 {% set image = resize_image(path=path, width=width, height=height, op=op) %}
 <img src="{{ image.url }}" />
+{% endcomponent resize_image %}

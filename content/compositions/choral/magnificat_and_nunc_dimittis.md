@@ -14,4 +14,4 @@ SATB choir (with divisi) and organ
 Sunny Lee, University of Bristol Church Choir  
    
 
-Perusal score available {{< file text="here" class="pdf" src="pdf/O nata lux (2023) - Joshua Gawley - FINAL (perusal).pdf" >}}
+Perusal score available {{ <static_link label="here" file="/compositions/O nata lux (2023) - Joshua Gawley - FINAL (perusal).pdf"/> }}

@@ -1,0 +1,53 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - "**"
+
+env:
+  ZOLA_VERSION: 0.23.4
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+        with:
+          lfs: true
+
+      - name: Checkout LFS objects
+        run: git lfs checkout
+
+      - name: Install Zola
+        run: |
+          curl -sL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | tar xz
+          sudo mv zola /usr/local/bin/
+
+      - name: Determine preview base URL
+        id: base_url
+        if: github.ref != 'refs/heads/main'
+        run: |
+          slug=$(echo "${{ github.ref_name }}" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+|-+$//g')
+          echo "url=https://${slug}-joshuagawley-github-io.joshuagawley.workers.dev" >> "$GITHUB_OUTPUT"
+
+      - name: Build site
+        run: |
+          if [ -n "${{ steps.base_url.outputs.url }}" ]; then
+            zola build --base-url "${{ steps.base_url.outputs.url }}"
+          else
+            zola build
+          fi
+
+      - name: Deploy to production
+        if: github.ref == 'refs/heads/main'
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Upload preview version
+        if: github.ref != 'refs/heads/main'
+        run: npx wrangler versions upload
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
