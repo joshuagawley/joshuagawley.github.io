@@ -1,5 +1,3 @@
-{% import "macros/seo.html" as seo %}
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -18,8 +16,8 @@
 {% endif %}
 
     <title>
-        {% if page.title %} {{ page.title }}
-        {% elif section.title %} {{ section.title }}
+        {% if page?.title %} {{ page.title }}
+        {% elif section?.title %} {{ section.title }}
         {% elif config.title %} {{ config.title }}
         {% else %}Post{% endif %}
     </title>
@@ -39,5 +37,5 @@
     {% block extra_head %} 
     {% endblock extra_head %}
 
-    {{ seo::google_analytics() }}
+    {{<seo.google_analytics config={config}/>}}
 </head>
