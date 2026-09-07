@@ -1,7 +1,4 @@
-{% import "macros/standard.html" as standard %}
-
-
-{%- macro meta_tags(page) -%}
+{%- component seo.meta_tags(page, config) -%}
   <meta name="author" content="{{ config.extra.author | safe }}">
   {%- if page.description -%}
     <meta name="description" content="{{ page.description | safe }}" />
@@ -14,50 +11,50 @@
   {%- if page.updated -%}
     <meta property="article:modified_time" content='{{ page.updated | safe }}' />
   {%- endif -%}
-  
+
   {%- if page.taxonomies.tags -%}
     <meta name="keywords" content="
       {%- for tag in page.taxonomies.tags -%}
-        {{ tag | safe }}, 
+        {{ tag | safe }},
       {%- endfor -%}
     ">
   {%- endif -%}
-  
+
   <meta name="generator" content="Zola">
-{%- endmacro meta_tags -%}
+{%- endcomponent seo.meta_tags -%}
 
 
-{%- macro open_graph(page) -%}
+{%- component seo.open_graph(page, config) -%}
   <meta property="og:title" content="{{ page.title | safe }}" />
   <meta property="og:url" content="{{ page.permalink | safe }}" />
   {%- if page.description -%}
     <meta property="og:description" content="{{ page.description | safe }}" />
   {%- endif -%}
   {%- if page.extra.image -%}
-    <meta property="og:image" content="{{ standard::get_url_on_location(path = page.extra.image.path) }}" />
+    <meta property="og:image" content="{{<standard.get_url_on_location path={page.extra.image.path}/>}}" />
   {%- endif -%}
   <meta property="og:site_name" content="{{ config.title | safe }}" />
   <meta property="og:locale" content="{{ config.extra.locale | safe }}" />
-{%- endmacro open_graph -%}
+{%- endcomponent seo.open_graph -%}
 
 
-{%- macro twitter_cards() -%}
+{%- component seo.twitter_cards(config) -%}
   <meta name="twitter:card" content="summary" />
-  {%- if config.extra.social.twitter -%}
+  {%- if config.extra.social?.twitter -%}
     <meta name="twitter:creator" content="{{ config.extra.social.twitter | safe }}" />
   {%- endif -%}
-{%- endmacro twitter_cards -%}
+{%- endcomponent seo.twitter_cards -%}
 
 
-{%- macro google_search_console() -%}
-  {%- if config.extra.seo.google_search_console -%}
+{%- component seo.google_search_console(config) -%}
+  {%- if config.extra.seo?.google_search_console -%}
     <meta name="google-site-verification" content="{{ config.extra.seo.google_search_console | safe }}" />
   {%- endif -%}
-{%- endmacro google_search_console -%}
+{%- endcomponent seo.google_search_console -%}
 
 
-{%- macro google_analytics() -%}
-  {%- if config.extra.seo.google_analytics -%}
+{%- component seo.google_analytics(config) -%}
+  {%- if config.extra.seo?.google_analytics -%}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.seo.google_analytics | safe }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -67,4 +64,4 @@
       gtag('config', '{{ config.extra.seo.google_analytics | safe }}');
     </script>
   {%- endif -%}
-{%- endmacro google_analytics -%}
+{%- endcomponent seo.google_analytics -%}
