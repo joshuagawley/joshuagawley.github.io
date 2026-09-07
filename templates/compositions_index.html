@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    {% block title %}
+        <h1><br>{{ section.title }}</br></h1>
+    {% endblock title %}
+
+    <section class="body">
+        <h2 id="choral">Choral</h2>
+        {% for page in section.pages %}
+        <p><a href="{{ page.permalink }}">{{ page.title }}</a></p>
+        {% endfor %}
+    </section>
+{% endblock main_content %}

@@ -1,13 +1,10 @@
 +++
 title = "Lord, for thy tender mercy's sake (2023)"
+date = 2023-01-01
+template = "composition.html"
+
+[extra]
+instrumentation = "Unaccompanied SATB choir"
+duration = "ca. 2 minutes"
+perusal_pdf = "Lord, for thy tender mercy's sake (2022) - Joshua Gawley - FINAL (perusal).pdf"
 +++
-
-## <b>Instrumentation</b>
-Unaccompanied SATB choir
-
-## <b>Duration</b>
-ca. 2 minutes
-
-Perusal score available {{ <static_link label="here" file="/compositions/Lord, for thy tender mercy's sake (2022) - Joshua Gawley - FINAL (perusal).pdf"/> }}
-
-If you are interested in performing this piece, please send me a message [here](@/contact/_index.md).
