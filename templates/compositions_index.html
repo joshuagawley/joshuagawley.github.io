@@ -6,9 +6,12 @@
     {% endblock title %}
 
     <section class="body">
-        <h2 id="choral">Choral</h2>
-        {% for page in section.pages %}
+        {% for sub_path in section.subsections %}
+        {% set sub = get_section(path=sub_path) %}
+        <h2 id="{{ sub.title | slugify }}">{{ sub.title }}</h2>
+        {% for page in sub.pages %}
         <p><a href="{{ page.permalink }}">{{ page.title }}</a></p>
+        {% endfor %}
         {% endfor %}
     </section>
 {% endblock main_content %}

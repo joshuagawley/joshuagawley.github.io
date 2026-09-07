@@ -1,7 +1,6 @@
 +++
 title = "Magnificat and Nunc dimittis (2024)"
-date = 2024-06-02
-template = "composition.html"
+date = 2024-01-01
 
 [extra]
 instrumentation = "SATB choir (with divisi) and organ"

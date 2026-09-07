@@ -1,7 +1,6 @@
 +++
 title = "The darkness is no darkness with thee (2022)"
-date = 2023-03-20
-template = "composition.html"
+date = 2022-01-01
 
 [extra]
 note = "Winner of the 2023 Bristol University Music Society Composition Competition"
