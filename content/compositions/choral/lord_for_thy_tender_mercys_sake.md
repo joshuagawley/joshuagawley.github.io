@@ -1,6 +1,7 @@
 +++
-title = "Lord, for thy tender mercy's sake (2023)"
-date = 2023-01-01
+title = "Lord, for thy tender mercy's sake (2022)"
+date = 2022-01-01
+draft = true
 
 [extra]
 instrumentation = "Unaccompanied SATB choir"

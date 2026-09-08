@@ -1,6 +1,7 @@
 +++
 title = "Magnificat and Nunc dimittis (2024)"
 date = 2024-01-01
+draft = true
 
 [extra]
 instrumentation = "SATB choir (with divisi) and organ"
