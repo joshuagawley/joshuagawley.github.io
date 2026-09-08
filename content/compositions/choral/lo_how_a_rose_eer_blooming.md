@@ -1,6 +1,7 @@
 +++
 title = "Lo, how a rose e'er blooming (2024)"
 date = 2024-01-01
+draft = true
 
 [extra]
 instrumentation = "Unaccompanied SSAATBB choir"
