@@ -7,3 +7,7 @@
     {{ get_url(path = path_safe) | safe }}
   {%- endif -%}
 {%- endcomponent standard.get_url_on_location -%}
+
+{%- component standard.page_title(title: string) -%}
+<h1><br>{{ title }}</h1>
+{%- endcomponent standard.page_title -%}

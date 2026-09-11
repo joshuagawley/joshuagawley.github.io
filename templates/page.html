@@ -2,7 +2,7 @@
 
 {% block main_content %}
     {% block title %}
-        <h1><br>{{ page.title }}</br></h1>
+        {{<standard.page_title title={page.title}/>}}
     {% endblock title %}
 
     <section class="body">
